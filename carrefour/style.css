@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+/*Div de apoio*/
+.center{
+    display: flex;
+    max-width: 1300px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*=======================*/
+
+.header{
+    background-color: #E4E4E4;
+}
+
+.banner-cupom a img{
+    max-width: 100%;
+}
+
+.sobre-menu{
+    display: flex;
+    width: 100%;
+}
+.outros-servicos{
+    width: 50%;
+    padding: 5px 0;
+}
+
+.outros-servicos a:nth-child(1){
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px 6px 10px;
+    color: blue;
+    font-weight: bolder;
+    background-color: white;
+}
+.outros-servicos a:nth-child(2){
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-weight: bolder;
+    background-color: #DE4A22;
+}
+.outros-servicos a:nth-child(3){
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-weight: bolder;
+    background-color: #062B68;
+}
+
+.atendimento{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.atendimento a{
+    font-size: 13px;
+    color: #363636;
+}
+
+.store-header{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.store-logo a span img{
+    height: 40px;
+    margin-right: 10px;
+}
+
+.store-search{
+    display: flex;
+    align-items: center;
+}
+
+.store-search input{
+    border-top: solid #1F5BC6 1px;
+    border-left: solid #1F5BC6 1px;
+    border-right: none;
+    border-bottom: solid #1F5BC6 1px;
+    padding: 10px 0;
+    width: 500px;
+    border-radius: 5px 0 0 5px;
+}
+
+.store-search button{
+    padding: 5px 10px;
+    background-color: #1F5BC6;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.store-user {
+    display: flex;
+    align-items: center;
+}
+
+.store-user .store-nav{
+    margin-left: 15px;
+    cursor: pointer;
+    display: flex;
+}
+
+.texto-link{
+    text-align: center
+}
+
+.texto-link span{
+    display: block;
+    font-size: 12px;
+}
+.store-nav:hover .texto-link span{
+    color: #336ACD;
+}
+/*===========================================*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown-content a{
+      display: block;
+      margin: 5px;
+      padding: 5px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .store-nav{
+      color: #336ACD;
+  }
+
+.dropdown-content a:hover{
+    border-bottom: 1px solid black;
+}
