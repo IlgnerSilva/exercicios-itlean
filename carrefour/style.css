@@ -159,7 +159,7 @@
 
 .links-navegacao{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
 }
@@ -232,6 +232,8 @@
     border: 1px solid #1F5BC6;
     cursor: pointer;
 }
+
+
 /*===========================================*/
 
 /*============== Main ===================*/
@@ -283,7 +285,7 @@
     border-radius: 5px;
 }
 
-
+/*====================Chat=============*/
 .chat{
     position: fixed;
     bottom: 50px;
@@ -291,4 +293,58 @@
     border: 5px solid #ccc;
     background-color: white;
     border-radius: 50%;
+}
+/*=====================================*/
+.melhores-produtos{
+    padding: 20px 0;
+}
+.produtos h2{
+    color: #0C2E6D;
+    padding: 20px 0;
+    font-weight: normal;
+}
+.produtos{
+    width: 100%;
+}
+
+.celulares{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cards-cel{
+    border: 1px solid #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cards-cel img{
+    width: 160px;
+    height: 160px;
+}
+
+.cards-cel a{
+    width: 190px;
+    color: #6F6F6F;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.preco-celular{
+    margin: 10px 10px;
+}
+
+.preco-celular .preco-anterior{
+    color: #999999;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.preco-celular .preco-atual{
+    color: #1F5BC6;
+    font-size: 18px;
+    font-weight: bold;
 }
