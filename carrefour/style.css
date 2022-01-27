@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    text-decoration: none;
+    text-decoration: none;  
 }
 /*Div de apoio*/
 .center{
@@ -22,6 +22,9 @@
 
 .banner-cupom a img{
     max-width: 100%;
+    height: 50px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .sobre-menu{
@@ -272,6 +275,7 @@
 .promocoes{
     display: flex;
     width: 100%;
+    margin-top: 10px;
 }
 
 .img-promocoes{
@@ -303,6 +307,7 @@
     padding: 20px 0;
     font-weight: normal;
     cursor: not-allowed;
+    margin-top: 10px;
 }
 .produtos{
     width: 100%;
@@ -312,6 +317,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .cards-cel{
@@ -373,9 +379,62 @@
     font-size: 18px;
     font-weight: bold;
 }
+/*=================Section Melhores oportunidades===============*/
+.melhores-oportunidades{
+    width: 100%;
+}
+.cards-oportunidades{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.card-op{
+    text-align: center;
+    width: calc(90% / 8);
+    cursor: pointer;
+    color: #ccc;
+}
+.card-op a{
+    color: rgb(92, 92, 92);
+}
+.card-op:hover a{
+    color: #1F5BC6;
+}
+.card-op .border{
+    border: solid #ccc 1px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.card-op .border:hover{
+    border: 1px solid #487AD1;
+    box-shadow: 0 0 2px 0px black;
+}
+
+.card-op img{
+    width: 100%;
+    
+
+}
+/*=================Section Melhores ofertas===============*/
+.ofertas-card{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.ofertas-card a{
+    width: calc(98% / 3);
+}
+.ofertas-card a img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
 /*=================Section Mercado Online===============*/
 .mo-cards{
-    height: 300px;
+    height: 350px;
+    margin-bottom: 20px;
 }
 .cards-flex{
     display: flex;
@@ -396,6 +455,7 @@
     max-width: 100%;
     max-height: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .img-vertical{
@@ -409,8 +469,9 @@
 .img-vertical img{
     max-width: 100%;
     max-height: 50%;
-    height: 50%;
+    height: 175px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .img-pequenas{
@@ -423,8 +484,9 @@
 .img-pequenas img{
     max-width: 100%;
     max-height: 100%;
-    height: calc(150px - 2.5px);
+    height: calc(175px - 2.5px);
     border-radius: 5px;
+    object-fit: cover;
     
 }
 
@@ -438,14 +500,33 @@
     width: 100%;
     max-width: 100%;
 }
-.card-descontos img{
+.card-descontos a{
     width: 50px;
     margin: 0 5px;
     width: calc((100% / 5) - 10px);
+    opacity: 0.9;
 }
+.card-descontos a img{
+    width: 100%;
+    opacity: 0.9;
+}
+
+.card-descontos a img:hover{
+    opacity: 1;
+}
+/*=================Card Serviço===============*/
+.servicos{
+    display: flex;
+    margin-top: 20px;
+}
+.card-servico{
+    display: flex;
+    align-items: center;
+}
+
 /*=================Feedback===============*/
 .feedback{
-    position: absolute;
+    position: fixed;
     left: -30px;
     top: 250px;
     transform: rotate(-90deg);
