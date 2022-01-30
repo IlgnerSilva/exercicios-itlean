@@ -517,12 +517,112 @@
 /*=================Card Serviço===============*/
 .servicos{
     display: flex;
+    padding: 20px 0;
     margin-top: 20px;
+    justify-content: space-around;
 }
 .card-servico{
     display: flex;
     align-items: center;
+    width: calc(95% / 5);
 }
+
+.card-servico img{
+    margin-right: 10px;
+}
+
+.descricao-servico h3{
+    font-size: 15px;
+}
+.descricao-servico span{
+    font-size: 12px;
+    color: rgb(114, 114, 114);
+}
+.descricao-servico a{
+    text-decoration: underline;
+    color: blue;
+}
+
+.ajuda{
+    width: 100%;
+}
+
+.ajuda img {
+    max-width: 100%;
+}
+/*========================================*/
+
+/*=================Footer===============*/
+.footer{
+    padding: 20px 0;
+    width: 100%;
+    
+    margin-bottom: 20px;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.colunas-footer {
+    width: calc(95% / 5);
+}
+.colunas-footer h3{
+    color:#333333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.colunas-footer > a{
+    display: inline-block;
+    margin: 10px 0;
+    color: #70726B;
+    font-size: 15px;
+}
+.colunas-footer a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.tel{
+    width: 100%;
+}
+
+.tel p{
+    margin: 20px 0 10px 0;
+}
+
+.tel a{
+    border: solid black 1px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+}
+.meios-de-pagamento h3{
+    font-size: 15px;
+}
+.icones-cartoes{
+    display: flex;
+    max-width: 65%;
+    flex-wrap: wrap;
+}
+.icones-cartoes img{
+    width: 33px;
+    height: 24px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.icones-sociais img{
+    width: 27px;
+    height: 24px;
+}
+/*=================Footer===============*/
 
 /*=================Feedback===============*/
 .feedback{
